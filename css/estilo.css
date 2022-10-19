@@ -20,6 +20,8 @@ nav ul {
     align-items: center;
     justify-content: space-between;
     color: white;
+    letter-spacing: 2px;
+    margin-left: 10px;
 }
 .logoa{
     width: 140px;
@@ -29,7 +31,7 @@ nav ul li {
     display: flex;
     align-items: center;
     gap: 50px;
-    color: white;
+    color: rgb(255, 55, 55);
 }
 .icon1 {
     width: 50px;
@@ -40,13 +42,35 @@ nav ul li {
 ul li a:hover {
     color: rgb(255, 255, 255);
 }
-.img-carrosela{
-    width: 90px;
+.img-cao{
+    margin-top: 4em;
+    margin-left: 12em;
+    width: 60em;
 }
+/*
+.carrosel1 {
+    align-items: center;
+    justify-content: center;
+}*/
 h5 {
     color: white;
     font-size: 34px;
 }
 p{
     color: white;
+}
+.titulo23 {
+    margin-left: 6em;
+}
+.img-card {
+    width: 250px;
+}
+footer {
+    background-color: #343434;
+    width: 100%;
+    height: 8em;
+}
+.font-footer {
+    color: white;
+    font-family: 'ABeeZee', sans-serif;
 }
