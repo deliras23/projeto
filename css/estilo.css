@@ -63,7 +63,13 @@ p{
     margin-left: 6em;
 }
 .img-card {
-    width: 250px;
+    width: 220px;
+    vertical-align: middle;
+    max-width: 30vw;
+    transition: 1s;
+}
+.img-card:hover {
+    transform: scale(1.1);
 }
 footer {
     background-color: #343434;
