@@ -31,7 +31,7 @@ nav ul li {
     display: flex;
     align-items: center;
     gap: 50px;
-    color: rgb(255, 55, 55);
+    text-decoration: none;
 }
 .icon1 {
     width: 50px;
@@ -56,15 +56,23 @@ h5 {
     color: white;
     font-size: 34px;
 }
-p{
-    color: white;
-}
 .titulo23 {
     margin-left: 6em;
 }
+.box-cards {
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+}
+.cards {
+    gap: 10em;
+    padding: 1.5em;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .img-card {
-    width: 220px;
-    vertical-align: middle;
+    width: 15vw;
     max-width: 30vw;
     transition: 1s;
 }
