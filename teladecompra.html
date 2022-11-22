@@ -7,6 +7,7 @@
     <title>Compra</title>
     <link rel="stylesheet" href="css/estilo.css">
 
+    <link rel="shortcut icon" href="img/logofav.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,9 @@
         <nav>
             <ul>
                 <li>
-                    <a href="img/kinopleslogo.png" class="logoa"></a>
+                    <a href="index.html" >
+                      <img src="img/logok.png" class="logo">
+                    </a>
                 </li>
                 <li>
                   <a href="programacao.html">Programação</a>
@@ -27,7 +30,7 @@
                 </li>
                 
                 <li class="nav-list">
-                  <a><img src="img/account.png" class="icon1"></a>
+                  <a href="account.html"><img src="img/account.png" class="icon1"></a>
                 </li>
             </ul>
         </nav>
@@ -101,6 +104,11 @@
                   <option value="fifa">Um Lugar no Paraíso</option>
                   <option value="cod">Telefone Preto</option>
                   <option value="ff">Minions 2</option>
+                  <option value="fifa">Não, Não Olhe</option>
+                  <option value="cod">Thor 4</option>
+                  <option value="ff">Um Lugar bem longe daqui</option>
+                  <option value="ff">After:Depois da promessa</option>
+                  <option value="ff">Homem Aranha Sem volta pra casa</option>
                 </select>
               </div>
 
@@ -123,17 +131,71 @@
 
             <div class="col-12" id="valor">
                 <h1>R$ <output id="total">0</output>,00</h1>
-              </div>
+            </div>
 
-              <div class="col-3">
-                <button type="submit" class="btn btn-success" onclick="concluir()" >Comprar igresso</button>               
-              </div>
+            <div class="col-3">
+              <button type="submit" class="btn btn-success" onclick="concluir()" >Comprar igresso</button>               
+            </div>
 
-              <div class="col-3">
-                <button type="submit" class="btn btn-danger" onclick="concluir()" >Cancelar Compra</button>               
-              </div>
+            <div class="col-3">
+              <button type="submit" class="btn btn-danger" onclick="cancelar()" >Cancelar Compra</button>               
+            </div>
+
+            <div class="col-12" id="msg-1">
+              <h1><output id="msg"></output></h1>
+          </div>
         </form>
     </section>
+
+    <footer>
+      <div>
+        <a href="#">
+          <img src="img/kinopleslogo.png" alt="" class="logof">
+        </a>
+      </div>
+      <div class="flc">
+        <h4>Fale Conosco</h4>
+      </div>
+      <div class="rds">
+        <h4 >Redes Sociais</h4>
+      </div>
+      <div class="falec">
+        <div >
+          <a href="https://www.youtube.com/user/kinoplexmania">
+            <img src="img/YouTube.png" alt="" class="icon icon-2">
+          </a>
+          <div class="desc-f">
+            <h5>@kinoplexmania</h5>
+          </div>
+        </div>
+
+        <div>
+          <a href="#">
+            <img src="img/Envelope.png" alt="" class="icon icon-3">
+          </a>
+          <div class="desc2-f">
+            <h5>kinoplex@gmail.com</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="redeso">
+        <a href="https://www.facebook.com/kinoplex">
+          <img src="img/Facebook.png" alt="" class="icon icon-4">
+        </a>
+        <div class="desc3-f">
+          <h5>@KinoplexRJ</h5>
+        </div>
+
+        <a href="https://www.instagram.com/kinoplex/">
+          <img src="img/Instagram.png" alt="" class="icon icon-5">
+        </a>
+        <div class="desc4-f">
+          <h5>@KinoplexRJ</h5>
+        </div>
+      </div>
+      
+    </footer>
     
     <script src="js/compra.js"></script>
     <script src="js/login.js"></script>

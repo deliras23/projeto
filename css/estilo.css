@@ -14,33 +14,59 @@ header{
 nav {
     width: 100%;
     height: 100%;
-    list-style: none;
 }
 nav ul {
+    margin: 1em;
+    padding: auto;
     display: flex;
-    justify-content: space-evenly;
-    color: white;
+    justify-content: space-between;
     
 }
-.logoa{
-    width: 140px;
+.logo{
+    width: 160px;
 }
 nav ul li {
     display: flex;
+}
+nav ul li a {
     text-decoration: none;
+    color: white;
+}
+ul li a:hover {
+    color: rgb(184, 184, 184);
 }
 .icon1 {
     width: 40px;
     cursor: pointer;
    
 }
-ul li a:hover {
-    color: rgb(255, 255, 255);
-}
 .img-cao{
     margin-top: 4em;
     margin-left: 12em;
     width: 60em;
+}
+@media screen and (max-width: 720px) {
+    .img-cao {
+        width: 22em;
+        margin-left: 4.2em;
+    }
+    nav ul {
+        margin-left: -5em;
+        gap: 2em;
+        font-size: 15px;
+    }
+    .logo {
+        width: 90px;
+    }
+    .titulo {
+        font-size: 25px;
+        margin-left: -4em;
+        margin: 0em 0em -2em -4em;
+    }
+    .titulo23 {
+        text-align: center;
+    }
+
 }
 .slide-car {
     color: white;
@@ -66,6 +92,7 @@ p {
     align-items: center;
     justify-content: space-evenly;
 }
+
 .img-card {
     width: 15vw;
     transition: 1s;
@@ -80,10 +107,47 @@ p {
 .sec-2 {
     margin-top: 5em;
 }
+/*sessão footer*/
+@media screen and (max-width: 720px) {
+    footer {
+        width: 100%;
+        width: 100%;
+    }
+    .logof {
+        width: 20vh;
+        margin: auto;
+    }
+    .flc {
+        display: none;
+    }
+    .rds {
+        display: none;
+    }
+    .desc-f {
+        display: none;
+    }
+    .desc2-f {
+        display: none;
+    }
+    .desc3-f {
+        display: none;
+    }
+    .desc4-f {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+    .icon5 {
+        display: none;
+    }
+    
+}
 footer {
     background-color: #343434;
     width: 100%;
     height: 43vh;
+    position: absolute;
 }
 .font-footer {
     color: white;
@@ -97,10 +161,10 @@ footer {
 }
 h4 {
     color: white;
-    font-size: 30px;
+    font-size: 24px;
 }
 h5 {
-    font-size: 20px;
+    font-size: 15px;
 }
 .flc {
     margin-left: 32em;
@@ -108,7 +172,7 @@ h5 {
 }
 .rds {
     margin-left: 52em;
-    margin-top: -2.8em;
+    margin-top: -2.5em;
 }
 .falec {
     margin-left: 30em;
@@ -125,7 +189,7 @@ h5 {
 
 .redeso {
     margin-left: 50em;
-    margin-top: -9.5em;
+    margin-top: -9.1em;
 }
 .desc3-f {
     margin-top: -4.4em;
@@ -159,3 +223,97 @@ h5 {
         width:80vh ;
     }
 }
+
+/*sessão cinemas*/
+.cinemas-div {
+    align-content: center;
+    margin-left: 17em;
+}
+.img-shopp { 
+    width: 128vh;
+    border-radius: 15px;
+}
+.titl-cinemas {
+    margin: 7em;
+}
+.end-cards {
+    margin: 0em 0em 10em 0em;
+}
+
+@media  screen and (max-width: 720px) {
+    .end-cards {
+        margin: 0em 0em 5em 0em;
+        margin-left: -14.2em;
+    }
+    .img-shopp {
+        width: 70vh;
+        border-radius: 7px;
+    }
+    .tt {
+        text-align: center;
+        font-size: 15px;
+    }
+    .endereco {
+        text-align: center;
+        font-size: 10px;
+        width: 50vh;
+        margin-left: 5.5em;
+    }
+}
+
+.endereco {
+    margin-top: -7em;
+    text-align: center;
+    margin-right: 19em;
+}
+.tt{
+    color: white;
+    text-align: center;
+}
+/*sessão programação*/
+h1 {
+    font-size: 2em;
+}
+.card-ps {
+    margin: 0em 0em 3em 0em;
+}
+.card-p {
+    margin-left: 20em;
+}
+.img-p {
+    width: 120vh;
+    transition: 1s;
+}
+.img-p:hover {
+    transform: scale(1.1);
+}
+/*sessão account*/
+.sec-form-2{
+    width: 120vh;
+    margin: auto;
+    padding: 8em;
+}
+@media  screen and (max-width: 720px) {
+    .img-p {
+        width: 70vh;
+    }
+    .card-p {
+        margin-left: 2.6em;
+    }
+    .titl-cinemas {
+        font-size: 10px;
+    }
+    .titl-cinemas1 {
+        font-size: 10px;
+    }
+    .sec-form-2 {
+        width: 70vh;
+        margin: auto;
+        padding: 2em;
+    }
+    .titulo33 {
+        margin: 0em 0em 2em 0em;
+    }
+    
+}
+
